@@ -1,0 +1,77 @@
+
+
+<div class="row align-items-center" [@fadeInOut]>
+ 
+<div class="row justify-content-md-center">
+    <!--<div class="col col-lg-3 margin-border"> -->
+      <div class="col-lg-5 col-sm-8 margin-border">
+          <img src="./assets/images/mebela.png"
+          width="550" height="500"
+          class="rounded mx-auto d-block" alt="me">
+        
+      </div>
+    <div class="col-lg-4 col-md-8 col-sm-12 margin-border">
+        <div class="container col col-lg-8" style="margin-top: 100px">
+            <h1 class="display-5">I am Bela, a Front End Programmer!</h1>   
+            <p class="lead">This is a test website for my Portfolio.</p>
+            <!--
+            <button type="button" class="btn btn-outline-purple"
+            [routerLink]="['/home']" id = "abtmebtn" (click) = "hideBtn()"
+            >See more</button>
+            -->
+            <button-glow 
+            color="red"
+            [label]="'See more'" 
+            [id] = "'btntest'" 
+            [routerLink]="['/home']"
+            #buttonValue></button-glow>
+
+            <span *ngIf = "showSpan" id = "spanHidden">
+              <social-medias-buttons></social-medias-buttons>
+            </span>
+        </div>
+            
+    </div>
+</div>
+    
+    <!--
+    <div class = "top-space">
+      <about-me></about-me>
+    </div>
+    <div class = "top-space">
+      <contact-me></contact-me>
+    </div>
+    -->
+
+
+  </div>
+
+
+
+<div class ="top-space margin-border padding" style="margin-bottom: 40px;">
+ <!-- 
+  <h3>Social Medias</h3>
+  <a href="https://github.com/sakikout?tab=repositories">
+    <img src="./assets/images/icons/github-mark.png"
+    width="42" height="42"
+    class="rounded float margin-border space-between" alt="github"
+    >
+  </a>
+  <a href="https://www.linkedin.com/in/beatriz-evelyn-dalfior-994b04209/">
+    <img src="./assets/images/icons/linkedin.png"
+    width="42" height="42" 
+    class="rounded float margin-border space-between" alt="linkedin"
+    >
+  </a>
+  <a (click) = "showTelegram()">
+    <img src="./assets/images/icons/telegram.png"
+    width="42" height="42" 
+    class="rounded float margin-border space-between" alt="@dibella666">
+  </a>
+  <a href="https://www.instagram.com/dalfiarts/">
+    <img src="./assets/images/icons/instagram.png"
+    width="42" height="42" 
+    class="rounded float margin-border space-between" alt="instagram"
+    ></a>
+-->
+</div>

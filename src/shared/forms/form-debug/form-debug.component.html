@@ -1,0 +1,17 @@
+<div style = "margin-top: 20px" *ngIf = "formGroup || form || formDirective">
+  <div>
+    Detalhes do form
+  </div>
+  <pre>
+    Form válido: {{formGroup.valid}}
+  </pre>
+  <pre *ngIf = "form">
+    Form submetido: {{form.submitted}}
+  </pre>
+  <pre *ngIf = "formDirective">
+    Form submetido: {{formDirective.submitted}}
+  </pre>
+  <pre>
+    Valores: <br> {{formGroup.value | json}}
+  </pre>
+</div>

@@ -1,0 +1,97 @@
+
+<div class = "container text-center">
+    <button class = "btn btn-outline-danger margin-border" 
+    id = "btnshow" style = "margin-top: 30px"
+    (click) = "showProjects()" #btnShow>See Projects</button>
+</div>
+  
+<div class = "container fade-in" *ngIf = "showProj">
+   
+<div class="container text-center top-space">
+   <h2>Repositories</h2> 
+</div>
+
+<div class="card-group text-center top-space">
+      <div class="card padding-border">
+        <img class="rounded mx-auto d-block margin-border"  
+        src="../assets/images/icons/java.png"
+        width="60" height="60"
+        alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Java Exercises</h5>
+          <p class="card-text">This is one of my main projects</p>
+          <a href="https://github.com/sakikout/CSI102-Listas-Java"
+          target="_blank" rel="noopener noreferrer"
+           class="btn btn-outline-danger">See Project</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated:</small>
+        </div>
+      </div>
+      <div class="card padding-border">
+        <img class="rounded mx-auto d-block margin-border" 
+        src="../assets/images/icons/python_logo.png"
+        width="60" height="60"
+        alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Python Exercises</h5>
+          <p class="card-text">This is another project.</p>
+          <a href="https://github.com/sakikout/CSI105-Listas-Python"
+          target="_blank" rel="noopener noreferrer" 
+          class="btn btn-outline-danger">See Project</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated: </small>
+        </div>
+      </div>
+      <div class="card padding-border">
+        <img class="rounded mx-auto d-block margin-border"
+        src="../assets/images/icons/c_icon.png"
+        width="60" height="60"
+        alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">C Exercises</h5>
+          <p class="card-text">This is another project.</p>
+          <a href="https://github.com/sakikout/CSI101-Listas-C"
+          target="_blank" rel="noopener noreferrer"
+          class="btn btn-outline-danger">See Project</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated: </small>
+        </div>
+      </div>
+      </div>  
+      <div class="card-group text-center top-space">
+        <div class="card padding-border">
+          <img class="rounded mx-auto d-block margin-border"  
+          src="../assets/arts/wizardquest/Decarabia.jpg"
+          width="80" height="80"
+          alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Wizard Quest</h5>
+            <p class="card-text">This was the first game I tried to develop when I was 17.
+               I have created the concept art, and my sister made most of the assets.</p>
+            <a (click) = "goToArts()"
+            class="btn btn-outline-orange">See more</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated: September, 2021</small>
+          </div>
+        </div>
+        <div class="card padding-border">
+          <img class="rounded mx-auto d-block margin-border" 
+          src="../assets/arts/refant/lyca.png"
+          width="80" height="80"
+          alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Refant</h5>
+            <p class="card-text">This is the game my team developed for the game competition Change The Game, in 2021. I have made the entire art and storytelling.</p>
+            <a (click) = "goToArts()"
+            class="btn btn-outline-blue">See more</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated: November, 2021</small>
+          </div>
+        </div>
+      </div>  
+</div>

@@ -1,0 +1,208 @@
+<div class = "container text-center fade-in">
+<div class="card-group text-center top-space">
+    <div class="card padding-border">
+      <img class="rounded mx-auto d-block margin-border"  
+      src="../assets/arts/wizardquest/Decarabia.jpg"
+      width="80" height="80"
+      alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Wizard Quest</h5>
+        <p class="card-text">This was the first game I tried to develop when I was 17.
+           I have created the concept art, and my sister made most of the assets.</p>
+        <a (click) = "showSlideWQ()"
+        class="btn btn-outline-orange">See Project</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated: September, 2021</small>
+      </div>
+    </div>
+    <div class="card padding-border">
+      <img class="rounded mx-auto d-block margin-border" 
+      src="../assets/arts/refant/lyca.png"
+      width="80" height="80"
+      alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Refant</h5>
+        <p class="card-text">This is the game my team developed for the game competition Change The Game, in 2021. I have made the entire art and storytelling.</p>
+        <a (click) = "showSlideRefant('refantEl')"
+        class="btn btn-outline-blue">See Project</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated: November, 2021</small>
+      </div>
+    </div>
+  </div>  
+
+    <!----------------------------------- WIZARD QUEST ------------------------------------------>
+    <div class = "container text-center top-space fade-in">
+        <div class="row align-items-center top-space" *ngIf = "showWQ">
+            <div class = "row top-space margin-border title">
+                <h3>Wizard Quest</h3>
+            </div>
+              <div class="col col-lg-4 margin-border">
+                  <figure class="figure">
+                      <img src="../assets/arts/wizardquest/carolus.jpg" 
+                      class="figure-img rounded img-fluid float-left img-thumbnail"
+                      width="300" height="300" 
+                      alt="cover">
+                      <figcaption class="figure-caption text-end">
+                          The meeting with Carolus XIII and Warlock</figcaption>
+                  </figure>
+              </div> 
+               
+              <div class="col col-lg-7">
+                  <div class="container col-md-auto">
+                      <div class ="game-description">
+                      Wizard Quest is a RPG game that tells a story about an elf, the game's protagonist who is the greatest wizard of the 
+                      reign of Busara, located in the continent of Uchawi, in the planet Mzee. He was called by Carolus XIII, the King, 
+                      by the suggestion of the warlock Bela, after they noticed some strange behavior in creatures and an apparition of 
+                      a dragon next to the castle. Since it is a unknown event and pottentially dangerous, he was sent by himself to investigate 
+                      the phenomenon, while fighting against possesed creatures and meeting new friends and allies, important for the story.
+                      This game was supposed to be an introduction of the universe of "Wizard Quest", so its premise and mechanics would be 
+                      simple as well, and focused more on story and scenarios.
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"
+        *ngIf = "showWQ">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../assets/arts/wizardquest/stages2.jpg"  class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>The Concept Art of the Stages</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/arts/wizardquest/bosses.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>The Bossess and main Enemies</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/arts/wizardquest/colours.jpg"
+              class="d-block w-100" alt="first idea">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>The Concept Art of the NPCS and Protagonists</h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+
+<!----------------------------------- REFANT ------------------------------------------>
+<div class = "container text-center top-space fade-in" id = "refantEl">
+    <div class="row align-items-center top-space" *ngIf = "showR">
+        <div class = "row top-space margin-border title">
+            <h3>Refant</h3>
+        </div>
+          <div class="col col-lg-4 margin-border">
+              <figure class="figure">
+                  <img src="../assets/arts/refant/cover.jpg" 
+                  class="figure-img rounded img-fluid float-left img-thumbnail" 
+                  alt="refant cover"
+                  width="300" height="300" >
+                  <figcaption class="figure-caption text-end">
+                      Refant Game Cover</figcaption>
+              </figure>
+          </div> 
+           
+          <div class="col col-lg-6">
+              <div class="container col-md-auto">
+                  <div class ="game-description">
+                  Refant is a 2D game based on player's choices. It tells the story of an 
+                  ant that does not have a name, so it is only called Ant, who is running from 
+                  its home because it is internal war, and its race is being haunted by some extremists within it.
+                  While it is on its way to escape to somewhere else, Ant found a little ant alone next a building, 
+                  and its journey starts by its decision: will you take it with you?
+                  During the game, Ant will meet new insects, and it can create friends or enemies, while it has to 
+                  manage its resource - because you can take folks with you too. The ending will change based on your 
+                  decisions, and it has 4 endings.
+                  This game is about war and xenophobia, but it is not just telling the player a story about it: 
+                  is making them relate to it.
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+    <div id="carouselR" class="carousel slide" data-bs-ride="carousel"
+    *ngIf = "showR">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselR" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselR" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselR" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselR" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselR" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/arts/refant/meeting_the_folks.jpg"  class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>NPCS encounter</h5>
+            <p>This is the first meeting with some important npcs from the story.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/arts/refant/model.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Protagonists encounter</h5>
+            <p>This is where the protagonists first met in the game.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/arts/refant/skunklevel.jpg"
+          class="d-block w-100" alt="first idea">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Concept Art of the levels</h5>
+            <p>This was the first idea I had for the game levels.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/arts/refant/therun.jpg"
+          class="d-block w-100" alt="first idea">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>The War</h5>
+            <p>This is the background from the initial phase of the game.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/arts/refant/changethegameidea.jpg"
+          class="d-block w-100" alt="first idea">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>The Overview</h5>
+            <p>This is a representation of what would it be the game mechanics.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselR" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselR" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+</div>
+

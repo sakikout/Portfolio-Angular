@@ -1,0 +1,122 @@
+<div class="container fade-in" >
+  <div class="row top-space">
+    <div class = "container text-center top-space" id ="contactMe">
+      <h3>Contact Me</h3>
+    </div>
+<form class="needs-validation" novalidate [formGroup]="form">
+    <div class="row top-space margin-border" style = "place-content: center;">
+        <div class="col-md-5 mb-3">
+            <label for="validationServer01">First name</label>
+            <input 
+            type="text" 
+            class="form-control"
+            formControlName = "firstName"
+            [ngClass] = "aplicaClassInput('firstName')"
+            id="validationServer01" 
+            placeholder="Name" 
+            value="Mark" required>
+            <div [ngClass]="aplicaClassValid('firstName')"
+            *ngIf ="isValid('firstName') && validTouched('firstName')">
+              Looks good!
+            </div>
+            <div [ngClass]="aplicaClassError('firstName')"
+            *ngIf ="!isValid('firstName') && validTouched('firstName') && hasError('firstName')?.['minlength']">
+            It needs to have at least {{ hasError('firstName')?.['minlength'].requiredLength }} characters.
+          </div>
+          <div [ngClass]="aplicaClassError('firstName')"
+          *ngIf ="!isValid('firstName') && validTouched('firstName') && hasError('firstName')?.['maxlength']">
+            It can not have more than {{ hasError('firstName')?.['maxlength'].requiredLength }} characters.
+          </div>
+          <div [ngClass]="aplicaClassError('firstName')"
+          *ngIf ="isFieldEmpty('firstName') && !isValid('firstName') && hasError('firstName')?.['required']">
+            This field is required.
+          </div>
+          </div>
+          <div class="col-md-5 mb-3">
+            <label for="validationServer02">Last name</label>
+            <input 
+            type="text" 
+            class="form-control" 
+            formControlName = "lastName"
+            [ngClass] = "aplicaClassInput('lastName')"
+            id="validationServer02" 
+            placeholder="Last name" 
+            value="Otto" required>
+            <div [ngClass]="aplicaClassValid('lastName')"
+            *ngIf ="isValid('lastName') && validTouched('lastName')">
+              Looks good!
+            </div>
+            <div [ngClass]="aplicaClassError('lastName')"
+            *ngIf ="!isValid('lastName') && validTouched('lastName') && hasError('lastName')?.['minlength']">
+            It needs to have at least {{ hasError('lastName')?.['minlength'].requiredLength }} characters.
+          </div>
+          <div [ngClass]="aplicaClassError('lastName')"
+          *ngIf ="!isValid('lastName') && validTouched('lastName') && hasError('lastName')?.['maxlength']">
+            It can not have more than {{ hasError('lastName')?.['maxlength'].requiredLength }} characters.
+          </div>
+          <div [ngClass]="aplicaClassError('lastName')"
+          *ngIf ="isFieldEmpty('lastName') && !isValid('lastName') && hasError('lastName')?.['required']">
+            This field is required.
+          </div>
+          </div>
+            <div class="col-sm-10 mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <input 
+              type="email" 
+              class="form-control" 
+              formControlName = "email"
+              [ngClass] = "aplicaClassInput('email')"
+              id="inputEmail3" 
+              placeholder="Email">
+              <div [ngClass]="aplicaClassValid('lastName')"
+              *ngIf ="isValid('lastName') && validTouched('lastName')">
+                Looks good!
+              </div>
+              <div [ngClass]="aplicaClassError('email')"
+              *ngIf ="!isValid('email') && validTouched('email') && hasError('email')?.['email']">
+                Enter a valid email.
+              </div>
+              <div [ngClass]="aplicaClassError('email')"
+              *ngIf ="!isValid('email') && validTouched('email') && hasError('email')?.['required']">
+                This field is required.
+              </div>
+            </div>
+          <div class="col-sm-10 mb-3">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea 
+        class="form-control" 
+        formControlName = "message"
+        [ngClass] = "aplicaClassInput('message')"
+        id="exampleFormControlTextarea1" 
+        rows="3"></textarea>
+        <div [ngClass]="aplicaClassValid('message')"
+            *ngIf ="isValid('message') && validTouched('message')">
+              Looks good!
+            </div>
+        <div [ngClass]="aplicaClassError('message')"
+          *ngIf ="!isValid('message') && validTouched('message') && hasError('message')?.['required']">
+            Please enter a message.
+        </div>
+        <div [ngClass]="aplicaClassError('message')"
+            *ngIf ="!isValid('message') && validTouched('message') && hasError('message')?.['minlength']">
+            It needs to have at least {{ hasError('message')?.['minlength'].requiredLength }} characters.
+          </div>
+          <div [ngClass]="aplicaClassError('message')"
+          *ngIf ="!isValid('message') && validTouched('message') && hasError('message')?.['maxlength']">
+            It can not have more than {{ hasError('message')?.['maxlength'].requiredLength }} characters.
+          </div>
+      </div>
+      <div class="col-md-5 mb-3">
+        <button type="submit" id = "submitBtn"
+        class="btn btn-outline-danger"
+        (click) = "onSubmit()">Submit
+        </button>
+        <button type = "button" class="btn btn-default"
+          (click) = "onCancel()" style = "float: right;">Cancel</button>
+      </div>
+  </div>
+
+   
+  </form>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+
+<div class="form-group"
+  [formGroup] = "formGroup"
+  [ngClass]="classeCSSCampo"
+  >
+    <label class="form-label" [attr.for]="id">{{ label }}</label>
+    <input class = "form-control" [(ngModel)] = "value"
+    [placeholder]="placeholder"
+    [type]="type"
+    [id]="id"
+    [formControlName]= "formControlName"
+    [ngClass]="classeCSSInput"
+    [readonly] = "!!isReadOnly"
+    required
+    >
+    <div id="validationServer03Feedback" class="invalid-feedback"
+    *ngIf = "condition">
+      <errorMsg
+      [form] = "form"
+      [fieldName] = "fieldName"></errorMsg>
+    </div>
+</div>
+
+

@@ -1,0 +1,150 @@
+$purple: #8e24d4;
+$red: #dc3545;
+
+.button-purple {
+    min-width: 150px;
+    min-height: 60px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: white;
+  background: linear-gradient(90deg, $purple 0%, $purple 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px $purple;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  .button-purple::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(140px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid $purple;
+    box-shadow: 0 0 60px $purple;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button-purple:hover, .button-purple:focus {
+    color: white;
+    background-color: $purple;
+    transform: translateY(-3px);
+  }
+  
+.button-purple::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid $purple;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+
+  /******************************* RED *******************************************/
+  
+  .button-red {
+    min-width: 150px;
+    min-height: 60px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: white;
+  background: linear-gradient(90deg, $red 0%, $red 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 10px 10px 25px $red;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  .button-red::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(135px + 12px);
+    min-height: calc(55px + 12px);
+    border: 6px solid $red;
+    box-shadow: 0 0 60px $red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button-red:hover, .button-red:focus {
+    color: white;
+    background-color: $red;
+    transform: translateY(-3px);
+  }
+  
+.button-red::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid $red;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+  }
+
+.fade-in {
+    transition: opacity 500ms ease-in;
+    animation: fading 1.0s;
+}
+
+  @keyframes fading {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}

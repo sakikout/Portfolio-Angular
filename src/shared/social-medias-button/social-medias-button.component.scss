@@ -1,0 +1,20 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+
+.btn {
+    margin: 10px;
+}
+
+.github:hover,  .github:focus{
+
+    box-shadow: 2px 2px 20px 2px #333333;
+}
+
+.linkedin:hover, .linkedin:focus {
+    
+    box-shadow: 2px 2px 20px 2px #0082ca;
+}
+
+.instagram:hover, .instagram:focus {
+   
+    box-shadow: 2px 2px 20px 2px #ac2bac;
+}
